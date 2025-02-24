@@ -1,0 +1,7 @@
+---
+- op: replace
+  path: "/spec/template/spec/containers/0/image"
+  value: "homeassistant:$CI_COMMIT_HASH"
+- op: replace
+  path: "/spec/template/spec/containers/0/resources/limits/memory"
+  value: "1Ei"
